@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UFT-8">
+	<title>Sintaxis y Selectores CSS</title>
+	<link rel="stylesheet" href="flexboxgrid.min.css">
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<div class="container">
+		<header class = "row">
+			<div class="col-xs-12">
+				<div class="header">
+					<h1>Sintaxis y Selectores CSS</h1>
+				</div>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-xs-12 principal">
+				<div class="sidebar1">
+					<div id="header">
+						<ul class="nav">
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="">Temas</a>
+								<ul>
+									<li><a href="">Sintaxis y Selectores CSS</a>
+									<li><a href="interaccion.html">Interacción Humano Ordenador</a>
+								</ul>
+							</li>
+							<li><a href="">Recursos Digitales</a>
+								<ul>
+									<li><a href="recurso1.html">Recurso 1</a>
+									<li><a href="recurso2.html">Recurso 2</a>
+								</ul>
+							</li>
+							<li><a href="">Aprendizaje</a>
+                                <ul>
+                                    <li><a href="">Opcion 1</a>
+                                    <li><a href="">Opcion 2</a>
+                                </ul>     
+                            </li>
+                            <li><a href="autor.html">Autor</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-12">
+				<div class="contenido">
+					<h2>¿Que es CSS?</h2>
+					<h3>Son las siglas en inglés para "Hojas de Estilo en Cascada  
+                        Es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo lucen cuando un visitante las visita. 
+                        Funciona junto al lenguaje HTML, que se encarga del contenido básico de las páginas</h3>
+                        <h3> Con este, puedes crear reglas para decirle a tu sitio web cómo quieres mostrar la información y puedes guardar los comandos para elementos de estilo 
+                            (como fuentes, colores, tamaños, etc.) separados de los que configuran el contenido</h3>
+                            <h6>Santos, D. (2021, 10 febrero)</h6>
+                            <img src="logocss.png" alt="MDN">
+                    <h2><br>Selectores Basicos</h2>
+                    <h3>
+                        <br><br><b>Selector de Tipo: </b>Selecciona todos los elementos que coinciden con el nombre del elemento especificado. <b>Sintaxis: </b><font face="Consolas" size=3.6>input</font> 
+                        <br><br><b>Selector de Clase: </b>Selecciona todos los elementos que tienen el atributo de "class" especificado. <b>Sintaxis: </b><font face="Consolas" size=3.6>.input</font>
+                        <br><br><b>Selector de ID: </b>Selecciona un elemento basándose en el valor de su atributo "id" (esto para un elemento único). <b>Sintaxis: </b><font face="Consolas" size=3.6>#input</font>
+                        <br><br><b>Selector de Universal: </b>Selecciona todos los elementos del documento (Se puede limitar la zona de selección) <b>Sintaxis: </b><font face="Consolas" size=3.6>*</font>
+                        <br><br><b>Selector de Atributo: </b>Selecciona un elemento basándose en un atributo especifico <b>Sintaxis: </b><font face="Consolas" size=3.6>[atributo]</font>
+                    </h3>
+                    <h2><br>Sintaxis</h2>     
+                          <h3>
+                            Selector universal: Se utiliza para seleccionar todos los elementos de la página y se indica mediante un asterisco (*). 
+                            No se utiliza habitualmente, ya que es difícil que un mismo estilo se pueda aplicar a todos los elementos de una página.
+                            <br><br><img src="selectoruniversal.PNG" alt="MDN">
+                          </h3>
+                          <h3>
+                            Selector de tipo: Selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del selector. 
+                            El siguiente ejemplo selecciona todos los párrafos de la página.
+                            <br><br><img src="selectordetipo.PNG" alt="MDN">
+                          </h3>
+                          <h3>
+                              Selector de Etiqueta: CSS permite agrupar reglas que aplican a diferentes etiquetas en una sola regla con un selector múltiple. 
+                              Para ello, se incluyen todos los selectores separados por una coma (,).
+                              <br><br><img src="selectoretiqueta.PNG" alt="MDN">
+                          </h3>             
+				</div>
+			</div>
+		</div>
+
+		<!--<footer class="row">
+			<div class="col-xs-12">
+				<div class="footer">
+					<h2>Footer</h2>
+				</div>
+			</div>
+		</footer>-->
+
+	</div>
+</body>
+</html>
