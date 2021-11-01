@@ -5,6 +5,8 @@
 	<title>Etiquetas Básicas de HTML,atributos y valores</title>
 	<link rel="stylesheet" href="flexboxgrid.min.css">
 	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="easybook.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<div class="container">
@@ -47,28 +49,259 @@
 
 			<div class="col-xs-12 col-md-12">
 				<div class="contenido">
-					<h2>¿Que es la interacción Humano-Ordenador?</h2>
-					<h3>La interaccion Humano Ordenador es aquella cadena de acciones que hayan en las acciones realizadas por el usuario pra usar el software de un dispositivo. 
-                        En esta interacción destacan sus principales protagonistas quienes son: El usuario, el ordenador y su proceso interactivo. 
-                        Por su parte el usuario, es decir, un ser humano debido a sus capacidades se encuentra limitado a la hora de procesar información, 
-                        y como principales entradas y salidas de la misma tenemos la vista, la audición, el tacto y el movimiento, 
-                        aunque bien nosotros podemos realizar algunas tareas de procesamiento, muchas veces tenemos que apoyarnos en elementos que agilizen esto.</h3>
-                        <h3>Para ello, fueron creados ciertos dispositivos que hacen de manera mas eficiente estas tareas, que llevan a cabo los debidos procesos logicos/matematicos. 
-                            Con este componente, las entradas y salidas de infomacion varian, ya que puede haber una entrada de texto por medio del teclado, 
-                            entradas de audio por medio de un microfono u otro productor de ruido (instrumentos musicales, tarjetas de mezcla y demas), 
-                            movimiento por medio del cursor del mouse o derivaciones como pueden ser tablas digitalizadoras. Y en caso de las salidas tenemos la pantalla, 
-                            altavoces y demas, donde podemos ver reflejado el resultado de todo el proceso de las entradas de información.</h3>
-                            <h6>B. (s. f.)</h6>
-                            <br><img src="interaccionho.jfif" alt="MDN">
-				</div>
-			</div>
-		</div>
+					<h2 id="tipos-de-atributos">3.1 Tipos de atributos</h2>
 
-		<aside>
+				<p>Aunque cada una de las etiquetas HTML define sus propios atributos, 
+					encontramos algunos comunes a muchas o casi todas las etiquetas, que se 
+					dividen en cuatro grupos según su funcionalidad:</p>
+
+				<ul>
+				<li>Atributos <strong>básicos</strong></li>
+				<li>Atributos de <strong>eventos</strong></li>
+				<li>Atributos de <strong>foco</strong></li>
+				</ul>
+
+				<h3 id="atributos-basicos">Atributos básicos</h3>
+
+				<p>Los atributos básicos se utilizan en la mayoría de etiquetas <strong>HTML</strong> y <strong>XHTML</strong>, aunque adquieren mayor sentido cuando se utilizan hojas de estilo en cascada (<strong>CSS</strong>):</p>
+
+				<div class="table" id="table-3-1">
+
+			    <table>
+				<thead>
+				<tr>
+  				<th align="right">Atributo</th>
+  				<th align="left">Descripción</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+  				<td align="right"><code>id="texto"</code></td>
+  				<td align="left">Establece un indicador único a cada elemento</td>
+				</tr>
+				<tr>
+  				<td align="right"><code>class="texto"</code></td>
+  				<td align="left">Establece la clase CSS que se aplica a los estilos del elemento</td>
+				</tr>
+				<tr>		
+  				<td align="right"><code>style="texto"</code></td>
+  				<td align="left">Aplica de forma directa los estilos CSS de un elemento</td>
+				</tr>
+				<tr>
+  				<td align="right"><code>title="texto"</code></td>
+  				<td align="left">Establece el título del elemento (Mejora la accesibilidad)</td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+
+
+
+<h3 id="atributos-de-eventos">Atributos de eventos</h3>
+
+<p>Estos atributos se utilizan en las páginas web que incluyen código <strong>JavaScript</strong> para realizar acciones dinámicas sobre los elementos de la página.</p>
+
+<p><strong>Pueden ser utilizados por: <em>todos los elementos</em></strong></p>
+
+<div class="table" id="table-3-3">
+
+    <table>
+<thead>
+<tr>
+  <th align="right">Atributos</th>
+  <th align="left">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="right"><code>onclick</code></td>
+  <td align="left">Ejecuta la acción cuando se realiza un clic sobre el elemento</td>
+</tr>
+<tr>
+  <td align="right"><code>ondblclick</code></td>
+  <td align="left">Ejecuta la acción cuando se realiza un doble clic sobre el elemento</td>
+</tr>
+<tr>
+  <td align="right"><code>onmousedown</code></td>
+  <td align="left">Ejecuta la acción cuando se detecta el botón pulsado del ratón</td>
+</tr>
+<tr>
+  <td align="right"><code>onmouseup</code></td>
+  <td align="left">Ejecuta la acción cuando se detecta que se ha soltado el botón del ratón</td>
+</tr>
+<tr>
+  <td align="right"><code>onmousemove</code></td>
+  <td align="left">Ejecuta la acción cuando se detecta el movimiento del ratón sobre el elemento</td>
+</tr>
+<tr>
+  <td align="right"><code>onmouseout</code></td>
+  <td align="left">Ejecuta la acción cuando el ratón abandona el elemento</td>
+</tr>
+<tr>
+  <td align="right"><code>onmouseover</code></td>
+  <td align="left">Ejecuta la acción cuando se detecta que el ratón se sitúa sobre el elemento</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<p><strong>Pueden ser utilizados por: <code>&lt;body&gt;</code></strong></p>
+
+<div class="table" id="table-3-4">
+
+    <table>
+<thead>
+<tr>
+  <th align="right">Atributos</th>
+  <th align="left">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="right"><code>onload</code></td>
+  <td align="left">Ejecuta la acción cuando se carga el documento</td>
+</tr>
+<tr>
+  <td align="right"><code>onunload</code></td>
+  <td align="left">Ejecuta la acción cuando se abandona el documento</td>
+</tr>
+<tr>
+  <td align="right"><code>onresize</code></td>
+  <td align="left">Ejecuta la acción cuando se ha modificado el tamaño de la ventana del navegador</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<p><strong>Pueden ser utilizados por: <em>elementos de formulario</em> y <code>&lt;body&gt;</code></strong></p>
+
+<div class="table" id="table-3-5">
+
+    <table>
+<thead>
+<tr>
+  <th align="right">Atributos</th>
+  <th align="left">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="right"><code>onkeydown</code></td>
+  <td align="left">Ejecuta la acción cuando se detecta que la tecla esta pulsada</td>
+</tr>
+<tr>
+  <td align="right"><code>onkeyup</code></td>
+  <td align="left">Ejecuta la acción cuando se detecta que se ha soltado la tecla pulsada</td>
+</tr>
+<tr>
+  <td align="right"><code>onkeypress</code></td>
+  <td align="left">Ejecuta la acción cuando se pulsa una tecla</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<p><strong>Pueden ser utilizados por: <em>varios</em></strong></p>
+
+<div class="table" id="table-3-6">
+
+    <table>
+<thead>
+<tr>
+  <th align="right">Atributos</th>
+  <th align="left">Descripción</th>
+  <th align="center">Elementos que pueden usarlo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="right"><code>onblur</code></td>
+  <td align="left">Ejecuta la acción cuando el elemento pierde el foco bien sea a través del ratón o por navegación tabulada</td>
+  <td align="center"><code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;body&gt;</code></td>
+</tr>
+<tr>
+  <td align="right"><code>onfocus</code></td>
+  <td align="left">Ejecuta la acción cuando el elemento obtiene el foco bien sea a través del ratón o por navegación tabulada</td>
+  <td align="center"><code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;body&gt;</code></td>
+</tr>
+<tr>
+  <td align="right"><code>onchange</code></td>
+  <td align="left">Ejecuta la acción cuando el valor de un control ha sido modificado</td>
+  <td align="center"><code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code></td>
+</tr>
+<tr>
+  <td align="right"><code>onreset</code></td>
+  <td align="left">Ejecuta la acción cuando el formulario es restablecido a sus valores por defecto</td>
+  <td align="center"><code>&lt;form&gt;</code></td>
+</tr>
+<tr>
+  <td align="right"><code>onselect</code></td>
+  <td align="left">Ejecuta la acción cuando un usuario selecciona texto en un campo de texto</td>
+  <td align="center"><code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code></td>
+</tr>
+<tr>
+  <td align="right"><code>onsubmit</code></td>
+  <td align="left">Ejecuta la acción cuando el formulario es enviado</td>
+  <td align="center"><code>&lt;form&gt;</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<h3 id="atributos-de-foco">Atributos de foco</h3>
+
+<p>Se le denomina <strong>foco</strong> o <em>focus</em>, cuando un 
+control o elemento del documento ha sido seleccionado. Cuando ese 
+elemento deja de estar seleccionado, "pierde el foco" y es el nuevo 
+elemento seleccionado el que se dice que tiene "el foco".</p>
+
+<div class="table" id="table-3-7">
+
+    <table>
+<thead>
+<tr>
+  <th align="right">Atributos</th>
+  <th align="left">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="right"><code>accesskey="letra"</code></td>
+  <td align="left">Establece una tecla de acceso rápido a un elemento HTML</td>
+</tr>
+<tr>
+  <td align="right"><code>tabindex="numero"</code></td>
+  <td align="left">Establece la posición del elemento en el orden de tabulación de la página (valor entre 0 y 32.767)</td>
+</tr>
+<tr>
+  <td align="right"><code>onfocus</code>, <code>onblur</code></td>
+  <td align="left">Controlan los eventos JavaScript que se ejecutan cuando el elemento obtiene o pierde el foco</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+</div>
+<h6> Equipo Vértice. (2009). Diseño básico de páginas web en HTML. Editorial Vértice. </h6>
+</div>
+</div>
+</div>
+
+		
+
+        <aside>
 			<h1>TimeLine Facebook UNAD</h1>
 			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 		</aside>
 
-	</div>
+</div>
 </body>
 </html>
