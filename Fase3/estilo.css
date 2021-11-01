@@ -13,6 +13,15 @@
 	width: 500px;
 }
 
+body {
+	text-align: center;
+	color:rgb(105, 103, 103);
+	background: #f2f2f2;
+	font-family: Verdana;
+	display: block;
+	font-weight: bold;
+}
+
 ul, ol {
 	list-style: none;
 }
@@ -42,24 +51,14 @@ ul, ol {
 .nav li:hover > ul {
 	display: block;
 }
-aside {
-	background-color: rgb(241, 233, 255);
-}
-body {
-	text-align: center;
-	color:rgb(105, 103, 103);
-	background: #f2f2f2;
-	font-family: Verdana;
-	display: block;
-	font-weight: bold;
-}
+
 
 .nav > li {
 	float: left;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	margin: 0; padding: 10px;
+	margin: 0; padding: 12px;
 }
 h6{
 	text-align: right;
@@ -74,6 +73,9 @@ h6{
 .aux {
 	text-align: center;
 	background: #38030e;
+}
+aside {
+	background-color: rgb(241, 233, 255);
 }
 
 
